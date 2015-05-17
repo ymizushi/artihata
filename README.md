@@ -7,10 +7,11 @@ http://artihata.herokuapp.com/
 ### Setup
 ```sh
 # server side
+brew install clojure
 lein ring server
 
 # client side
-cd js_project
+cd js-project
 bower install
 npm install
 ```
