@@ -1,6 +1,20 @@
 var artihata;
 
 (function (artihata) {
+  function createBaseImg(id) {
+    var img = document.createElement("img");
+    img.id =  ":" + id + ":";
+    img.class = "emoji"; 
+    img.title = ":" + id + ":"; 
+    img.alt = ":" + id + ":";
+    img.src = "img/emoji/" + id; 
+    img.height="20";
+    img.width="20";
+    img.align="absmiddle";
+    return img;
+  }
+
+
   var RGBA = (function () {
     function RGBA(r, g, b, a) {
         this.r = r;
@@ -22,7 +36,7 @@ var artihata;
   })();
 
   function getEmojiName(rgba, rgbaMap) {
-    var beforeDifference = 200000 // 十分に大きい数;
+    var beforeDifference = 200000 // 十分に大きい数
     var targetEmojiName;
     for (var emojiName in rgbaMap) {
       var baseRGBAList = rgbaMap[emojiName];
@@ -57,7 +71,10 @@ var artihata;
     return outputText;
   }
 
+
+
   var selectFileButton = document.getElementById("selectfile");
+  var pallet = document.getElementById("pallet");
   selectFileButton.addEventListener("change", function(event) {
     var file = event.target.files;
     var reader = new FileReader();
@@ -68,9 +85,6 @@ var artihata;
         var canvas = document.getElementById('canvas');
         var context = canvas.getContext('2d');
         var width = img.width;
-        if (width > 34) {
-          width = 34;
-        }
         var height = img.height;
         canvas.width = width;
         canvas.height = height;
@@ -96,7 +110,16 @@ var artihata;
           }
           emojiList.push(emojiRowList);
         }
+
         putText(serializeTableToText(emojiList));
+
+        for(var i in emojiList) {
+          for(var j in emojiList[i]) {
+            console.log(emojiList[i][j]);
+            pallet.appendChild(createBaseImg(emojiList[i][j]));
+          }
+          pallet.appendChild(document.createElement("br"));
+        }
       }
       img.src = reader.result;
     }
