@@ -1,7 +1,7 @@
 (defproject artihata "0.1.0"
   :description "The Making emoji-art tool for github."
   :url "http://example.com/FIXME"
-  :dependencies [[org.clojure/clojure "1.7.0-alpha4"]
+  :dependencies [[org.clojure/clojure "1.6.0"]
                  [lib-noir "0.9.4"]
                  [ring-server "0.3.1"]
                  [selmer "0.7.6"]
