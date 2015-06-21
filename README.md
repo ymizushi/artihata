@@ -12,7 +12,7 @@ brew install leiningen # install clojure and clojure automating tool.
 lein ring server
 ```
 
-#### server side
+#### client side
 ```
 cd js-project
 bower install
