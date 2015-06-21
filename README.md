@@ -20,5 +20,4 @@ npm install
 ```
 
 ### Screenshot
-## Screenshot
-![alt text](https://github.com/ymizushi/EmotionalHub/blob/master/screenshot.png "Miku-san")
+![alt text](https://github.com/ymizushi/artihata/blob/master/screenshot.png "Miku-san")
