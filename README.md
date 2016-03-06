@@ -2,7 +2,13 @@ artihata
 ================================
 artihata is the composition tool for Emoji.
 
-http://artihata.herokuapp.com/
+[Try now.](http://artihata.herokuapp.com/)
+
+### Screenshot
+![alt text](https://github.com/ymizushi/artihata/blob/master/screenshot.png "Miku-san")
+
+### Demo Movie
+(http://www.nicovideo.jp/watch/sm26512214)
 
 ### Setup
 
@@ -19,5 +25,3 @@ bower install
 npm install
 ```
 
-### Screenshot
-![alt text](https://github.com/ymizushi/artihata/blob/master/screenshot.png "Miku-san")
