@@ -8,7 +8,7 @@ artihata is the composition tool for Emoji.
 ![alt text](https://github.com/ymizushi/artihata/blob/master/screenshot.png "Miku-san")
 
 ### Demo Movie
-(http://www.nicovideo.jp/watch/sm26512214)
+http://www.nicovideo.jp/watch/sm26512214
 
 ### Setup
 
